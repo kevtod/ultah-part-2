@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puisi buat si cantik</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:mediumspringgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .poem-container {
+            font-family: 'Pacifico', cursive;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+        }
+        #countdown {
+            font-size: 18px;
+            margin-top: 20px;
+            color: crimson;
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="poem-container">
+        <h1>Ulang tahun tante </h1>
+        <p>
+            Tatkala riuh nestapa berkecamuk<br>
+            Jauh di dalam hujan yang kau rindukan<br>
+            Seolah tak kunjung datang<br>
+            Terpaksa atau bisa jadi tanpa paksaan<br>
+            Hatimu bermuara pada seorang musafir<br>
+            Yang gemar minum air<br><br>
+
+            Biasanya kau ditemani sepi<br>
+            Kini ada mas" yg datang menghampiri<br>
+            Mungkin demi sejengkal angin hangat<br>
+            Menepis dinginnya tiap harimu<br><br>
+            Cakrawala ikut tersenyum menyambut hari ini<br>
+            Sedikit menggores pelangi pada tudung langit<br>
+            Menyiratkan kabar<br>
+            tentang ujung indah melodi kisah<br>
+            dari nada ke 18, bersambung  bersamaku
+        </p>
+        <div id="countdown">30</div>
+    </div>
+
+    <script>
+        let countdown = 30;
+
+        function updateCountdown() {
+            document.getElementById('countdown').innerText = countdown;
+            countdown--;
+
+            if (countdown < 0) {
+                clearInterval(interval);
+                alert("I Love You cantik");
+            }
+        }
+
+        const interval = setInterval(updateCountdown, 1000);
+    </script>
+
+
+    </div>
+    
+
+    
+
+</body>
+</html>
